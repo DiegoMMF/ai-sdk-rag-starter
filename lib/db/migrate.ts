@@ -4,6 +4,11 @@ import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate } from "drizzle-orm/postgres-js/migrator";
 import postgres from "postgres";
 
+/*
+This will first add the pgvector extension to your database. Then it will create a 
+new table for your resources schema that is defined in lib/db/schema/resources.ts. 
+This schema has four columns: id, content, createdAt, and updatedAt.
+*/
 
 const runMigrate = async () => {
   if (!env.DATABASE_URL) {
