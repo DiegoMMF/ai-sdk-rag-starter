@@ -12,3 +12,15 @@ This project will use the following stack:
 - [Drizzle ORM](https://orm.drizzle.team)
 - [Postgres](https://www.postgresql.org/) with [ pgvector ](https://github.com/pgvector/pgvector)
 - [shadcn-ui](https://ui.shadcn.com) and [TailwindCSS](https://tailwindcss.com) for styling
+
+---
+
+## Let’s build a quick task list of what needs to be done:
+
+1. Create a table in your database to store embeddings
+
+2. Add logic to chunk and create embeddings when creating resources
+
+3. Create a chatbot
+
+4. Give the chatbot tools to query / create resources for it’s knowledge base
