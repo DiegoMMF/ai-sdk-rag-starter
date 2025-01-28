@@ -34,7 +34,7 @@ export async function POST(req: Request) {
     from the input and then append a new message to the messages array of type 
     tool-call. The AI SDK will then run the execute function with the parameters 
     provided by the tool-call message.
-    */
+    
     tools: {
       addResource: tool({
         description: `add a resource to your knowledge base.
@@ -46,7 +46,7 @@ export async function POST(req: Request) {
         }),
         execute: async ({ content }) => createResource({ content }),
       }),
-    },
+    }, */
   });
 
   return result.toDataStreamResponse();
